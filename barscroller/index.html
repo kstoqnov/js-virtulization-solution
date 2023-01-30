@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>Scrollbar example</title>
+<script src="barscroller.js"></script>
+<script language="javascript">
+
+document.onreadystatechange = () => {
+  if (document.readyState === 'complete') {
+   onDocumentReady()
+  }
+};
+
+function onDocumentReady() {
+    var bar = new SimpleBar()
+    var viewElement = document.getElementById("viewElement")
+    var childViewElement = document.getElementById("childViewElement")
+    //var bar = new SimpleBar()
+    bar.attachViews(viewElement, childViewElement, onScrolled)
+
+}
+
+function onScrolled(visibleStart, visibleEnd) {
+    //console.log("onScrolled:" + visibleStart + "," + visibleEnd)
+}
+
+</script>
+</head>
+<body>
+    <div id="viewElement" style="width:500px;height:300px;overflow:hidden;position:absolute;border: 1px solid #eeeeee">
+        <div id="childViewElement" style="top:0;position:absolute;">
+        <table>
+            <thead>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Apollo</td>
+                <td>Cabrera</td>
+                <td>1000 Any Street</td>
+            </tr>
+            <tr>
+                    <td>Apollo</td>
+                    <td>Cabrera</td>
+                    <td>1000 Any Street</td>
+            </tr>
+            <tr>
+                    <td>Apollo</td>
+                    <td>Cabrera</td>
+                    <td>1000 Any Street</td>
+            </tr>
+            <tr>
+                    <td>Apollo</td>
+                    <td>Cabrera</td>
+                    <td>1000 Any Street</td>
+            </tr>
+            <tr>
+                    <td>Apollo</td>
+                    <td>Cabrera</td>
+                    <td>1000 Any Street</td>
+            </tr>
+            <tr>
+                    <td>Apollo</td>
+                    <td>Cabrera</td>
+                    <td>1000 Any Street</td>
+            </tr>
+            <tr>
+                    <td>Apollo</td>
+                    <td>Cabrera</td>
+                    <td>1000 Any Street</td>
+            </tr>
+            <tr>
+                    <td>Apollo</td>
+                    <td>Cabrera</td>
+                    <td>1000 Any Street</td>
+            </tr>
+            <tr>
+                    <td>Apollo</td>
+                    <td>Cabrera</td>
+                    <td>1000 Any Street</td>
+            </tr>
+            <tr>
+                    <td>Apollo</td>
+                    <td>Cabrera</td>
+                    <td>1000 Any Street</td>
+            </tr>
+            <tr>
+                    <td>Apollo</td>
+                    <td>Cabrera</td>
+                    <td>1000 Any Street</td>
+            </tr>
+            <tr>
+                    <td>Apollo</td>
+                    <td>Cabrera</td>
+                    <td>1000 Any Street</td>
+            </tr>
+            <tr>
+                    <td>Apollo</td>
+                    <td>Cabrera</td>
+                    <td>1000 Any Street</td>
+            </tr>
+            <tr>
+                    <td>Apollo</td>
+                    <td>Cabrera</td>
+                    <td>1000 Any Street</td>
+            </tr>
+            <tr>
+                    <td>Apollo</td>
+                    <td>Cabrera</td>
+                    <td>1000 Any Street</td>
+            </tr>
+            <tr>
+                    <td>Apollo</td>
+                    <td>Cabrera</td>
+                    <td>1000 Any Street</td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+</body>
+</html>
